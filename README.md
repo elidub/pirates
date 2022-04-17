@@ -1,4 +1,4 @@
-# pires
+# _pires_
 
 With PIxel Ratio EStimation (_pires_), one can the posteriors of an arbitrary number of interchangable objects from multi-dimensional images. It is built upon [swyft](https://github.com/undark-lab/swyft) using Truncated Marginal Neural Ratio Estimation.
 
