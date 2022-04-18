@@ -7,8 +7,6 @@ Do you want to **estimate the posterior of an unknown number of interchangeable 
 - performs likelihood-free inference by estimating the likelihood-to-evidence ratio using TMNRE.
 - validates the results.
 
-<!-- ![[docs/figures/propaganda.PNG]] -->
-
 <img src="docs/figures/propaganda.PNG">
 
 ### Setup
@@ -17,11 +15,11 @@ pip install pirates
 ```
 
 ### Tutorial
-Imagine you have a simulator that produces 3 dimensional data `data` representing the intensity in space $(x,y)$ with objects that are described by $(x, y, M)$. One can let *Pirates* estimate the posterior of an object in a pixel $(x, y, M)$.
+Imagine you have a simulator that produces 3 dimensional data `data` representing the intensity in space <img src="https://render.githubusercontent.com/render/math?math=(x, y)"> with objects that are described by <img src="https://render.githubusercontent.com/render/math?math=(x, y, M)">. One can let *Pirates* estimate the posterior of an object in a pixel <img src="https://render.githubusercontent.com/render/math?math=(x, y, m)">.
 ```python
 pir.train(data, theta, data_dims = [0, 1], theta_dims = [0, 1, 2], dims = dict('x'=80, 'y'=80, 'M'=12)
 ```
-The network projects the posterios on a hypercube with resolution $80 \times 80 \times 12$.
+The network projects the posterios on a hypercube with resolution <img src="https://render.githubusercontent.com/render/math?math=(80 \times 80 \times 12)">.
 
 ### Links
 * **Documentation & installation**: https://pires.readthedocs.io/en/latest/
