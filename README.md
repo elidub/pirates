@@ -15,11 +15,12 @@ pip install pirates
 ```
 
 ### Tutorial
-Imagine you have a simulator that produces 3 dimensional data `data` representing the intensity in space <img src="https://render.githubusercontent.com/render/math?math=(x, y)"> with objects that are described by <img src="https://render.githubusercontent.com/render/math?math=(x, y, M)">. One can let *Pirates* estimate the posterior of an object in a pixel <img src="https://render.githubusercontent.com/render/math?math=(x, y, m)">.
+Imagine you have a simulator that produces 3 dimensional data `data` representing the intensity in space <img src="https://render.githubusercontent.com/render/math?math=(x, y)"> with objects that are described by <img src="https://render.githubusercontent.com/render/math?math=(x, y, M)">. One can let *Pirates* estimate the posterior of an object in a pixel <img src="https://render.githubusercontent.com/render/math?math=(x, y, M)">.
 ```python
 pir.train(data, theta, data_dims = [0, 1], theta_dims = [0, 1, 2], dims = dict('x'=80, 'y'=80, 'M'=12)
+pir.plot2D(['x', 'y']) # 2D plot of pixel posterior probabilities marginalizing over M
+pir.plot3D(['x', 'y', 'M']) # interacitve 3D plot of pixel posterior probabilities
 ```
-The network projects the posterios on a hypercube with resolution <img src="https://render.githubusercontent.com/render/math?math=(80 \times 80 \times 12)">.
 
 ### Links
 * **Documentation & installation**: https://pires.readthedocs.io/en/latest/
