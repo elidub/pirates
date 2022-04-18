@@ -7,7 +7,9 @@ Do you want to **estimate the posterior of an unknown number of interchangeable 
 - performs likelihood-free inference by estimating the likelihood-to-evidence ratio using TMNRE.
 - validates the results.
 
-![[Pasted image 20220418233446.png]]
+<!-- ![[docs/figures/propaganda.PNG]] -->
+
+<img src="docs/figures/propaganda.PNG">
 
 ### Setup
 ```bash
