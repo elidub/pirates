@@ -1,9 +1,10 @@
 # _Pirates_
 
-With PIxel RATio ESimation (_pirates_), one can the posteriors of an arbitrary number of interchangable objects from multi-dimensional images. It is built upon [swyft](https://github.com/undark-lab/swyft) using Truncated Marginal Neural Ratio Estimation (TMNRE).
+With PIxel RATio ESimation (_pirates_), solves the problems when determining posteriors of an arbitrary number of interchangable objects. It is built upon [swyft](https://github.com/undark-lab/swyft) using Truncated Marginal Neural Ratio Estimation (TMNRE).
 
 Do you want to **estimate the posterior of an unknown number of interchangeable objects**? Then *pirates* might help you, because it:
 - determines the *pixel posterior probability* of an object being in a user-defined pixel.
+- let the user define the number of input and output dimensions.
 - performs likelihood-free inference by estimating the likelihood-to-evidence ratio using TMNRE.
 - validates the results.
 
